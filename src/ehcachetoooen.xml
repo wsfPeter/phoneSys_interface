@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="true"
+	monitoring="autodetect" dynamicConfig="true">
+
+	<diskStore path="java.io.tmpdir" />
+
+	<defaultCache maxElementsInMemory="500" eternal="false"
+		timeToIdleSeconds="300" timeToLiveSeconds="1200" overflowToDisk="true" />
+
+	<cache name="varify" maxElementsInMemory="10000" eternal="false"
+		timeToLiveSeconds="1800" timeToIdleSeconds="1800" overflowToDisk="true">
+	</cache>
+
+	<!-- 60 s gap -->
+	<cache name="phonegap" maxElementsInMemory="10000" eternal="false"
+		timeToLiveSeconds="60" timeToIdleSeconds="60" overflowToDisk="true">
+	</cache>
+
+	<!-- 24 h 10 times -->
+	<cache name="phoneday" maxElementsInMemory="10000" eternal="false"
+		timeToLiveSeconds="86400" timeToIdleSeconds="86400" overflowToDisk="true">
+	</cache>
+
+</ehcache>

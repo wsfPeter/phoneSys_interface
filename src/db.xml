@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+    <database id="main" desc="dd"> 
+		<password>root</password>
+		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+		<isDatasource>false</isDatasource>
+		<datasource />
+		<username>root</username>
+		<dbType>mysql</dbType>
+		<url>jdbc:mysql://127.0.0.1:3306/mobilesys?characterEncoding=utf-8</url>
+	</database>
+
+</config>
+
